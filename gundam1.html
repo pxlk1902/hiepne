@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUNDAM-SHOPNGOO</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body >
+    <div id="mySidenav" class="sidenav fontlogo">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="sanpham1.html">PRODUCT</a>
+        <a href="gear.html">GAMING GEAR</a>
+        <a href="gundam.html">GUN DAM</a>
+        <a href="ao.html">T-SHIRT</a>
+        <a href="">OTHER</a>
+      
+      </div>
+      
+      
+       
+      <div id="main" style="padding-left:200px;padding-right:200px " >
+        
+        <span  style="font-size:50px;cursor:pointer" onmousemove="openNav()">&#9776; </span>
+        
+        <div style ="text-align: center;" class="sticky"  >
+      <img src="./anh/logo.jpg" alt="ngo" style="width: 80px;">
+      <div class="fontlogo" style="margin:20px;font-size: 45px;">SHOPNGOO</div>
+      
+      
+      </div> 
+      <hr>
+      <div class="sanpham1 fontlogo">
+      <a href="index.html">HOME &#10140;</a>
+      <a href="sanpham1.html">PRODUCTS &#10140;</a>
+      <a href="">NEWS &#10140;</a>
+      <span > XI GUNDAM VS PENELOPE FUNNEL MISSILE EFFECT SET</span>
+    </div>
+  
+   
+  
+    
+    
+    <div class="container" >
+      <div class="aouni">
+        <img src="./anh/gundam/sp1.jpg" style="width:100%">
+      </div>
+    
+      <div class="aouni">
+        <img src="./anh/gundam/sp2.jpg" style="width:100%">
+      </div>
+    
+      <div class="aouni">
+        <img src="./anh/gundam/sp3.jpg" style="width:100%">
+      </div>
+        
+      <div class="aouni">
+        <img src="./anh/gundam/sp4.jpg" style="width:100%">
+      </div>
+    
+      <div class="aouni">
+      
+        <img src="./anh/gundam/sp5.jpg" style="width:100%">
+      </div>
+        
+      
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    
+    
+      <div class="row" style="">
+        <div class="column">
+          <img  src="./anh/gundam/sp1.jpg" style="width:100%" onclick="currentSlide(1)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/gundam/sp2.jpg" style="width:100%" onclick="currentSlide(2)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/gundam/sp3.jpg" style="width:100%" onclick="currentSlide(3)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/gundam/sp4.jpg" style="width:100%" onclick="currentSlide(4)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/gundam/sp5.jpg" style="width:100%" onclick="currentSlide(5)" >
+        </div>    
+      
+      </div>
+         
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("aouni");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+        <div class="thongtinsp fontlogo"  >
+            <h2  style="text-align: center;font-size: 30px;">T-SHIRT UNISEX ONI - ORIGINAL</h2>
+            <hr style="width: 50%;">
+            <div class="trangthaisp"> 
+                <h3 style="">STATUS: </h3>
+                <h3 style="color: red;">STOCKING</h3>   
+                <h3 style="">AMOUNT:</h3>
+                <h3 style=" border-radius: 5px;
+                border: 2px solid #737573;
+                 boz-sizing :border-box;
+                 width:50px">999</h3>
+                <div class="trangthaisp"> 
+                  <h3 >SIZE:</h3>
+                  <select style="border:1px solid#dbdbdb ;color:#595959;height:34px;padding: 6px 27px 6px 8px;" >
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">L</option>
+                    <option value="">XS</option>
+                    <option value="">XL</option>
+
+                  </select>
+                  <div class="trangthaisp">
+                   <h3 style="">COST: </h3>
+                  <h3 style="color: red;font-weight: 600;font-size: 50px;padding-left:250px ;">299.00$</h3></div>
+                  <div style="text-align: center;padding: 100px;">
+                  <button class="fontlogo" style="border-radius: 40px;padding: 20px;
+                  font-size: 30px;">ADD TO CART</button></div>
+                  </div>
+                </div>
+            </div>
+            <button class="fontlogo" style="border-radius: 40px;padding: 20px;
+                  font-size: 20px; border:10px;">PRODUCT INFOMATION</button>
+             <div class="thongtinchitiet">
+             
+        <img src="./anh/gundam/tt1.jpg" alt="" style="">
+      
+      <div class="fontlogo">
+      <h4>Xi Gundam VS Penelope Funnel Missile Effect Set (HGUC - 1/144) đang có bán tại nShop </h4>
+        <h4>- bộ sản phẩm bao gồm 2 Mobile Suit chính trong series Mobile Suit Gundam Hathaway: Xi Gundam và Penelope, đi cùng set hiệu ứng tên lửa.</h4>
+        
+      </div>
+      <img src="./anh/gundam/tt2.jpg" alt="">
+      <img src="./anh/gundam/tt3.jpg" alt="">
+
+      
+      <div class="fontlogo">
+        <h4>-Xi Gundam lẫn Penelope đều là Mobile Suit khổng lồ với kích thước lên đến hơn 26m và được tái hiện lại với tỉ lệ 1/144. 
+
+        </h4>
+        <h4>Bởi kích thước gốc to đến ấn tượng nên dù thuộc cấp độ HG, 2 Mobile Suit này vẫn sẽ vượt trội hơn những mẫu HG, thậm chí là một số MG khác.</h4>
+      
+        <img src="./anh/gundam/tt4.jpg" alt="">
+        <h4>
+          THÔNG TIN XI GUNDAM VS PENELOPE FUNNEL MISSILE EFFECT SET (HGUC - 1/144) - MÔ HÌNH GUNDAM CHÍNH HÃNG BANDAI
+         <h4> Cấp độ HG với tỷ lệ 1/144</h4>
+         <h4>Độ chi tiết vừa phải, khớp chuyển động tương đối linh hoạt. Ráp theo kiểu bấm khớp, không cần dùng keo dán</h4>
+         <h4>Thuộc Series: Mobile Suit Gundam: Hathaway</h4>
+         <h4>Set bao gồm Xi Gundam và Penelope Gundam.</h4>
+         <h4>Phụ kiện bổ sung: Funnel Missile Effect cho Penelope, Funnel Missile Effect cho Xi Gundam.</h4>
+         <h4>Decal nước và dán (Xem hướng dẫn dán decal)</h4>
+         <h4>Xem cách làm đẹp cho Gundam bằng Gundam Marker</h4>
+         <h4>Có kèm 2 đế dựng chuyên dụng.</h4>
+         <h4>Sản phẩm Gunpla chính hãng của Bandai</h4>
+    </div>
+
+        </div>
+      </div>
+
+    
+
+     
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUNDAM-SHOPNGOO</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body >
+    <div id="mySidenav" class="sidenav fontlogo">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="sanpham1.html">PRODUCT</a>
+        <a href="gear.html">GAMING GEAR</a>
+        <a href="gundam.html">GUN DAM</a>
+        <a href="ao.html">T-SHIRT</a>
+        <a href="">OTHER</a>
+      
+      </div>
+      
+      
+       
+      <div id="main" style="padding-left:200px;padding-right:200px " >
+        
+        <span  style="font-size:50px;cursor:pointer" onmousemove="openNav()">&#9776; </span>
+        
+        <div style ="text-align: center;"   >
+      <img src="./anh/logo.jpg" alt="ngo" style="width: 80px;">
+      <div class="fontlogo" style="margin:20px;font-size: 45px;">SHOPNGOO</div>
+      
+      
+      </div> 
+      <hr>
+      <div class="sanpham1 fontlogo">
+      <a href="index.html">HOME &#10140;</a>
+      <a href="sanpham1.html">PRODUCTS &#10140;</a>
+      <a href="">NEWS &#10140;</a>
+      <span >MSI GeForce RTX 4090 SUPRIM LIQUID 24G</span>
+    </div>
+  
+   
+  
+    
+    
+    <div class="container" >
+      <div class="aouni">
+        <img src="./anh/gaminggear/gear1.jpg" style="width:100%">
+      </div>
+    
+      <div class="aouni">
+        <img src="./anh/gaminggear/gear2.jpg" style="width:100%">
+      </div>
+    
+      <div class="aouni">
+        <img src="./anh/gaminggear/gear3.jpg" style="width:100%">
+      </div>
+        
+      <div class="aouni">
+        <img src="./anh/gaminggear/gear4.jpg" style="width:100%">
+      </div>
+    
+      <div class="aouni">
+      
+        <img src="./anh/gaminggear/gear5.jpg" style="width:100%">
+      </div>
+        
+      
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    
+    
+      <div class="row" style="">
+        <div class="column">
+          <img  src="./anh/gaminggear/gear1.jpg" style="width:100%" onclick="currentSlide(1)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/gaminggear/gear2.jpg" style="width:100%" onclick="currentSlide(2)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/gaminggear/gear3.jpg" style="width:100%" onclick="currentSlide(3)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/gaminggear/gear4.jpg" style="width:100%" onclick="currentSlide(4)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/gaminggear/gear5.jpg" style="width:100%" onclick="currentSlide(5)" >
+        </div>    
+      
+      </div>
+         
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("aouni");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+        <div class="thongtinsp fontlogo"  >
+            <h2  style="text-align: center;font-size: 30px;">MSI GeForce RTX 4090 SUPRIM LIQUID 24G</h2>
+            <hr style="width: 50%;">
+            <div class="trangthaisp"> 
+                <h3 style="">STATUS: </h3>
+                <h3 style="color: red;">STOCKING</h3>   
+                <h3 style="">AMOUNT:</h3>
+                <h3 style=" border-radius: 5px;
+                border: 2px solid #737573;
+                 boz-sizing :border-box;
+                 width:50px">999</h3>
+                <div class="trangthaisp"> 
+                  <h3 >SIZE:</h3>
+                  <select style="border:1px solid#dbdbdb ;color:#595959;height:34px;padding: 6px 27px 6px 8px;" >
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">L</option>
+                    <option value="">XS</option>
+                    <option value="">XL</option>
+
+                  </select>
+                  <div class="trangthaisp">
+                   <h3 style="">COST: </h3>
+                  <h3 style="color: red;font-weight: 600;font-size: 50px;padding-left:50px ;">299.00$</h3>
+                     <div style="text-align: center;padding: 100px;">
+                  <button class="fontlogo" style="border-radius: 40px;padding: 15px;
+                  font-size: 30px;">ADD TO CART</button></div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+            <button class="fontlogo" style="border-radius: 40px;padding: 20px;
+                  font-size: 20px; border:10px;">PRODUCT INFOMATION</button>
+        <div class="thongtinchitiet">
+          <h2 class="fontlogo">Thông số kĩ thuật:</h2>
+          <table class="fontlogo" >
+            <tr>
+              <th>Nhân đồ hoạ</th>
+              <th>NVIDIA® GeForce RTX™ 3070 Ti</th>
+          
+            </tr>
+            <tr>
+              <td>Băng thông</td>
+              <td>PCI Express 4.0</td>
+           
+            </tr>
+            <tr>
+              <td>OpenGL</td>
+              <td>OpenGL®4.6</td>
+             
+            </tr>
+            <tr>
+              <td>Bộ nhớ</td>
+              <td>8GB GDDR6X</td>
+          
+            </tr>
+            <tr>
+              <td>Tốc độ</td>
+              <td>Chế độ OC - 1875 MHz (Xung tăng cường)<br>Chế độ Chơi Game - 1845 MHz (Xung tăng cường</td>
+          
+            </tr>
+            <tr>
+              <td>CUDA</td>
+              <td>6144</td>
+          
+            </tr>
+            <tr>
+              <td>Tốc độ bộ nhớ</td>
+              <td>19 Gbps </td>
+          
+            </tr>
+            <tr>
+              <td>Giao diện bộ nhớ</td>
+              <td>256-bit</td>
+          
+            </tr>
+            <tr>
+              <td>Độ phân giải</td>
+              <td>Độ phân giải Kỹ thuật Số Tối đa 7680 x 4320</td>
+          
+            </tr>
+            <tr>
+              <td>Cổng Kết Nối</td>
+              <td>Có x 2 (HDMI 2.1) <br>Có x 3 (Native DisplayPort 1.4a) <br>Hỗ trợ HDCP Có (2.3)</td>
+          
+            </tr>
+            <tr>
+              <td>Hỗ trợ NVlinks/Crossfire</td>
+              <td> No</td>
+          
+            </tr>
+            <tr>
+              <td>Phụ kiện</td>
+              <td>1 x ROG Velcro Hook & Loop<br>1 x Thẻ bộ sưu tập <br>1 x Hướng dẫn thiết lập nhanh</td> 
+          
+            </tr>
+            <tr>
+              <td>Kích thước</td>
+              <td>318.5 x 140.1 x 57.78 mm <br>12.53 x 5.51 x 2.27 inch</td>
+          
+            </tr>
+            <tr>
+              <td>PSU được đề xuất</td>
+              <td>750W</td>
+          
+            </tr>
+            <tr>
+              <td>Đầu nối nguồn </td>
+              <td>3 x 8 pin</td>
+          
+            </tr>
+            <tr>
+              <td>Khe cắm</td>
+              <td>Khe 2.9</td>
+          
+            </tr>
+          </table>
+          <div class="fontlogo">
+          <h2>Đánh giá chi tiết  Card màn hình ASUS ROG Strix GeForce RTX​ 3070Ti O8G GDDR6X
+          </h2>
+          <img src="./anh/gaminggear/gear1.jpg" alt="" >
+          <h2>Cải tiến công nghệ Axial</h2>
+          <h4>Thiết kế quạt Axial-tech đã được tối ưu hóa cho một bộ tản nhiệt mới, lớn hơn, có nhiều cánh tản nhiệt và diện tích bề mặt hơn thế hệ trước. Số lượng cánh quạt đã được tăng lên trên cả ba quạt, với 13 trên quạt trung tâm và 11 trên quạt phụ. Vòng chắn ở quạt bên đã được làm mỏng để cho phép hút gió bên nhiều hơn và cung cấp luồng không khí tốt hơn qua mảng làm mát. Các cánh phụ và vòng chiều cao đầy đủ của quạt trung tâm cung cấp áp suất tĩnh được tăng cường để thổi không khí trực tiếp lên bộ tản nhiệt.</h4>
+          <h2>Heatsink</h2>
+          <h4>Để dẫn nhiệt vào mảng tản nhiệt một cách hiệu quả, để nó có thể được thổi bay bởi các quạt công nghệ Axial mạnh mẽ, chúng tôi sử dụng quy trình sản xuất cải thiện độ mịn bề mặt của tản nhiệt tại. Độ phẳng thêm cho phép tiếp xúc tốt hơn với khuôn, giúp tăng cường truyền nhiệt.
+
+          </h4>
+          <h2>Hiệu quả tản nhiệt</h2>
+          <h4>Bộ tản nhiệt hút nhiệt vào các ống dẫn nhiệt đưa nó qua một ngăn xếp chiếm 2,9 khe trên vỏ máy. Việc tăng kích thước tản nhiệt so với thế hệ trước cung cấp nhiều khoảng không tản nhiệt hơn để tạo ra chipset hiệu năng cao.</h4>
+        <img style="wisth:100%" src="./anh/gaminggear/demo1.jpg" alt="" srcset="">
+        <h2>Linh kiện cao cấp</h2>
+        <h4>Các tụ điện, cuộn cảm và MOSFET hàng đầu được lựa chọn để đạt được kết quả cung cấp hàng trăm oát điện trong khoảng thời gian ngắn nhất. Với quy trình sản xuất tự động Auto-Extreme tiên tiến, các chi tiết Super Alloy Power II đã được hàn vào PCB tỉ mẩn, kỹ lưỡng. Sản phẩm hoàn toàn được sản xuất bằng dây chuyền máy chuyên nghiệp, hạn chế tối đa rủi ro lỗi do con người gây ra trong quá trình sản xuất và hoàn thiện. Ở sản phẩm RTX 3070 Ti ROG Strix cao cấp, mặt sau có hai cổng PWM kết nối quạt, tăng tính linh hoạt khi sử dụng, ngoài ra còn cung cấp thêm lượng khí nạp hoặc khí thải cho các tác vụ nặng.
+
+        </h4>
+        </div>
+
+
+
+        </div>
+
+    
+
+     
+
+</body>
+</html>
